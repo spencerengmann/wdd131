@@ -1,8 +1,43 @@
 body {
     font-size: 20px;
     font-style: Times New Roman;
+    border: 1px solid #d0d0d0;
+
+
 }
 
-h3 {
-    color: blue;
+#main-content {
+    max-width: 600px;
+    margin: auto;
+
+    line-height: 1.5;
+}
+
+h5 {
+    color: #006EB6;
+    margin-bottom: 0px;
+}
+
+header {
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+
+    border-bottom: 0.5px solid #d0d0d0;
+    text-align: center;
+
+
+}
+
+li {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px
+}
+
+footer img {
+    width: 150px;
+
 }
