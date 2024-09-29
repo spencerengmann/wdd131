@@ -1,6 +1,6 @@
 body {
     font-size: 20px;
-    font-style: Times New Roman;
+    font-family: "Times New Roman", Times, serif;
     border: 1px solid #d0d0d0;
 
 
@@ -34,10 +34,22 @@ li {
 
 footer {
     text-align: center;
-    padding: 25px
+    padding: 25px;
 }
 
 footer img {
     width: 150px;
+
+}
+
+
+body.dark {
+    background-color: #333;
+    color: white;
+
+}
+
+body.dark h5 {
+    color: #A0D4ED;
 
 }
