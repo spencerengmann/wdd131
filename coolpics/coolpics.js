@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     window.addEventListener("resize", handleResize);
 
-   
     handleResize();
 });
 
