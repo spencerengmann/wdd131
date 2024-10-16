@@ -22,3 +22,39 @@ document.addEventListener("DOMContentLoaded", () => {
     handleResize();
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const images = document.querySelectorAll('.focusable');
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.close');
+    const content = document.getElementById('content');
+
+    
+    images.forEach(image => {
+        image.addEventListener('click', function(event) {
+          
+            modal.style.display = 'flex';
+           
+            modalImage.src = event.target.src;
+            
+            content.classList.add('blur-background');
+        });
+    });
+
+    // Close the modal when the close button is clicked
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        // Remove the blur effect from the background content
+        content.classList.remove('blur-background');
+    });
+
+    
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            content.classList.remove('blur-background');
+        }
+    });
+});
