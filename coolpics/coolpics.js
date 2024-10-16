@@ -11,8 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function handleResize() {
         if (window.innerWidth > 1000) {
             navMenu.classList.remove("hide");
+            menuButton.style.display = "none";
         } else {
             navMenu.classList.add("hide");
+            menuButton.style.display = "";
         }
     }
 
