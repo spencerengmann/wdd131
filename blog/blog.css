@@ -108,9 +108,9 @@ figure {
     max-width: 300px;
     margin: 0 auto;
     padding: 20px;
-    border: 2px solid red;
+    border: 1px dotted red;
     border-radius: 10px;
-    ;
+    background-color: aliceblue;
 }
 
 form {
@@ -128,7 +128,7 @@ form select {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    font-size: 5px;
+    font-size: 13px;
 
 }
 
