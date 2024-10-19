@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+
+    color: #333
+}
+
+h1,
+h2 {
+    font-family: 'Lora', serif;
+
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4em;
+
+}
+
+header h1 a {
+    color: #333;
+    text-decoration: none;
+
+}
+
+header h1 a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+nav {
+    border-top: #d0d0d0 1px solid;
+    border-bottom: #d0d0d0 1px solid;
+    font-family: "Lora", serif;
+
+
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    padding: 0.5em;
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    ;
+}
+
+li a,
+h2 a,
+p a {
+    text-decoration: none;
+    color: #666;
+
+}
+
+li a:visited,
+h2 a:visited,
+p a:visited {
+    color: #666;
+}
+
+
+li a:hover,
+h2 a:hover,
+p a:hover {
+    color: #00ddff;
+}
+
+
+li a:active,
+h2 a:active,
+p a:active {
+    color: #DEB887;
+}
+
+.post-date {
+    text-align: right;
+    text-transform: uppercase;
+    border-bottom: #d0d0d0 1px solid;
+    margin-top: 1.5em;
+    padding: 0.3em;
+}
+
+section {
+    padding: 1em;
+
+}
+
+section p {
+
+    font-weight: bold;
+}
+
+figure {
+    text-align: center;
+}
+
+.form-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+    ;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+form label {
+
+    margin: 10px;
+}
+
+form select {
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 5px;
+
+}
+
+form option {
+    font-size: 13px;
+}
+
+.skiptocontent {
+    position: absolute;
+    background-color: lightsalmon;
+    color: black;
+    top: -40px;
+    left: 20%;
+}
+
+.skiptocontent:focus {
+    position: relative;
+}
+
+
+@media screen and (min-width:700px) {
+    nav ul {
+        display: flex;
+        justify-content: right;
+
+        margin: 0;
+
+    }
+
+    nav {
+        margin-bottom: 1.2em;
+
+
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 200px 1fr 350px;
+        gap: 1em;
+        align-items: stretch;
+        position: relative;
+    }
+
+    .post {
+        display: contents;
+    }
+
+    .post-date {
+        grid-column: 1 / 2;
+        border: none;
+        /* padding-top: 1.5em; */
+        margin-top: 30px;
+    }
+
+    .post-content {
+        grid-column: 2 / 3;
+        border-bottom: 1px dotted #d0d0d0;
+        border-left: 1px solid #d0d0d0;
+        padding: 1em;
+    }
+
+    .form-container {
+        grid-column: 3 / 4;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+
+    }
+
+
+
+
+}

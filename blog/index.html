@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="#">Kids Read for Fun</a></h1>
+
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Current Reviews</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="skiptocontent">
+      <a href="#maincontent">skip to main content</a>
+    </div>
+    <main>
+      <div class="grid">
+        <article class="post">
+          <h2 class="post-date">January 6, 2016</h2>
+          <section class="post-content">
+            <h2><a href="#">Septimus Heap Book One: Magyk</a></h2>
+            <figure>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
+                alt="Book cover for Septimus Heap 1"
+              />
+            </figure>
+            <p>
+              If you enjoy stories about seventh sons of seventh sons and magyk
+              this is the book for you. <a href="#">Read More...</a>
+            </p>
+          </section>
+        </article>
+
+        <article class="post">
+          <h2 class="post-date">Dec 20, 2015</h2>
+          <section class="post-content">
+            <h2><a href="#">Magnus Chase Book One: Sword of Summer</a></h2>
+            <figure>
+              <img
+                src="https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300"
+                alt="Book cover for Magnus Chase 1"
+              />
+            </figure>
+            <p>
+              The anticipated new novel by Rick Riordan. After Greek mythology
+              (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian
+              (Kane Chronicles), Rick decides to try his hand with Norse
+              Mythology, and the end result is good.
+              <a href="#">Read More...</a>
+            </p>
+          </section>
+        </article>
+
+        <div class="form-container">
+          <form action="#" method="get">
+            <label for="sort">Sort:</label>
+            <select name="sort" id="sort">
+              <option value="" disabled selected>Select an option</option>
+              <option value="name">Name</option>
+              <option value="date">Date</option>
+              <option value="Genre">Genre</option>
+            </select>
+            <label for="age">Age:</label>
+            <select name="age" id="age">
+              <option value="" disabled selected>Select an option</option>
+              <option value="all">All ages</option>
+              <option value="new">Teen</option>
+              <option value="old">Adult</option>
+            </select>
+            <label for="genre">Genre:</label>
+            <select name="genre" id="genre">
+              <option value="" disabled selected>Select an option</option>
+              <option value="action">Action</option>
+              <option value="comedy">Comedy</option>
+              <option value="drama">Drama</option>
+            </select>
+            <label for="rating">Rating:</label>
+            <select name="rating" id="rating">
+              <option value="" disabled selected>Select an option</option>
+              <option value="all">All Ratings</option>
+              <option value="pg">PG</option>
+              <option value="pg-13">PG-13</option>
+              <option value="r">R</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
