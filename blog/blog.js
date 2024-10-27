@@ -23,5 +23,58 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
-	}
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+		  "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc: "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
+	  }
+	  
 ]
+
+
+
+
+
+const articleContainer = document.querySelector('#article-container');
+
+
+function renderArticles() {
+  articles.forEach((article) => {
+    
+    const articleElement = document.createElement('article');
+    articleElement.classList.add('post');
+
+  
+    articleElement.innerHTML = `
+      <h2 class="post-date">
+        ${article.date}<br>
+        <span><strong>Genre:</strong> ${article.genre}</span><br>
+        <span><strong>Rating:</strong> ${article.stars}</span>
+      </h2>
+      <section class="post-content">
+        <h2><a href="#">${article.title}</a></h2>
+        <figure>
+          <img src="${article.imgSrc}" alt="${article.imgAlt}" />
+        </figure>
+        <p>${article.description} <a href="#" class="read-more">Read More...</a></p>
+      </section>
+    `;
+
+    articleContainer.appendChild(articleElement);
+  });
+}
+
+
+renderArticles();
+
+
+
+

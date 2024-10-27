@@ -88,6 +88,7 @@ p a:active {
     border-bottom: #d0d0d0 1px solid;
     margin-top: 1.5em;
     padding: 0.3em;
+    font-size: 1.2em
 }
 
 section {
@@ -146,6 +147,16 @@ form option {
 
 .skiptocontent:focus {
     position: relative;
+}
+
+.read-more {
+    color: tomato;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    color: darkred;
+    text-decoration: underline;
 }
 
 
