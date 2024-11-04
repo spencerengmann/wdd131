@@ -1,51 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Credit Card Submission Form">
-    <meta name="author" content="Gloria Ekpo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Credit Card Submission Form" />
+    <meta name="author" content="Gloria Ekpo" />
     <title>Credit Card Form</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.png" type="image/png">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <script src="form.js" defer></script>
+  </head>
+  <body>
     <div id="form-container">
-        <div id="card-back">
-            <div id="card-stripe"></div>
-            <div class="cvc-section">
-                <label for="card-cvc">CVC/CVV</label>
-                <input type="text" id="card-cvc" placeholder="XXX" minlength="3" maxlength="4" required>
-                <p class="cvc-description">Last 3 or 4 digits</p>
-            </div>
+      <div id="card-back">
+        <div id="card-stripe"></div>
+        <div class="cvc-section">
+          <label for="card-cvc">CVC/CVV</label>
+          <input
+            type="text"
+            id="card-cvc"
+            placeholder="XXX"
+            minlength="3"
+            maxlength="4"
+            required
+          />
+          <p class="cvc-description">Last 3 or 4 digits</p>
         </div>
- 
-        <div id="card-front">
-            <div id="top-section">
-                <span id="amount">TOTAL: <strong>$199</strong></span>
-                <img class="card-image" src="https://via.placeholder.com/30x30.png?text=Card" alt="card-icon" />
-            </div>
-            
-            <div class="input-group">
-                <label for="card-number">CARD NUMBER</label>
-                <input type="text" id="card-number" placeholder="1234 5678 9101 1020" maxlength="16" required>
-            </div>
-            <div class="name-exp-container">
-                <div class="input-group">
-                    <label for="card-holder">CARD HOLDER</label>
-                    <input type="text" id="card-holder" placeholder="John Doe" required>
-                </div>
-                <div class="exp-group">
-                    <label for="expiration">EXPIRATION</label>
-                    <div id="exp-container">
-                        <input type="text" id="card-month" placeholder="MM" maxlength="2" required>
-                        <input type="text" id="card-year" placeholder="YY" maxlength="2" required>
-                    </div>
-                </div>
-            </div>
+      </div>
+
+      <div id="card-front">
+        <div id="top-section">
+          <span id="amount">TOTAL: <strong>$199</strong></span>
+          <img
+            class="card-image"
+            src="https://via.placeholder.com/30x30.png?text=Card"
+            alt="card-icon"
+          />
         </div>
- 
-        <button type="button" id="card-btn">Submit</button>
+
+        <div class="input-group">
+          <label for="card-number">CARD NUMBER</label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="1234 5678 9101 1020"
+            maxlength="16"
+            required
+          />
+        </div>
+        <div class="name-exp-container">
+          <div class="input-group">
+            <label for="card-holder">CARD HOLDER</label>
+            <input
+              type="text"
+              id="card-holder"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="exp-group">
+            <label for="expiration">EXPIRATION</label>
+            <div id="exp-container">
+              <input
+                type="text"
+                id="card-month"
+                placeholder="MM"
+                maxlength="2"
+                required
+              />
+              <input
+                type="text"
+                id="card-year"
+                placeholder="YY"
+                maxlength="2"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" id="card-btn">Submit</button>
     </div>
-</body>
+  </body>
 </html>
