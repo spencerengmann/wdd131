@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Amatic SC", cursive;
+}
+
+
+body {
+    font-family: var(--primary-font);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    color: var(--text-dark);
+    font: var(--secondary-font);
+    border-bottom: 2px solid grey;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+header form input {
+    height: 40px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+header form img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+form button {
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    padding: 15px;
+
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.recipe img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.tag {
+    border: 2px solid var(--text-dark);
+    font-size: 1.5em;
+    padding: 5px;
+
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+
+    color: var(--text-dark);
+}
+
+footer p,
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social {
+    margin-top: 1rem;
+
+}
+
+.social img {
+    width: 50px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s;
+}
+
+
+@media (min-width: 600px) {
+    header form input {
+        height: 40px;
+        border-radius: 5px;
+        width: 900px;
+        font-size: 1.2em;
+    }
+
+    .recipe {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+
+
+    }
+
+    .recipe img {
+        max-width: 50%;
+
+    }
+
+    .content {
+        margin-bottom: 14%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer p {
+        order: 0;
+        font-size: 1.3em;
+    }
+
+    .social {
+        order: 1;
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    main {
+        gap: 2rem;
+    }
+}
