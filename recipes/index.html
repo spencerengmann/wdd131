@@ -17,9 +17,9 @@
     <meta property="og:image" content="images/recipe-book.png" />
     <meta property="og:url" content="URL_TO_YOUR_PAGE" />
     <meta name="twitter:card" content="summary_large_image" />
-    <title>Recipebook</title>
+    <title>RecipeBook</title>
     <link rel="stylesheet" href="recipes.css" />
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
   </head>
   <body>
     <header>
@@ -28,33 +28,18 @@
         <h1>RecipeBook</h1>
       </div>
       <form>
-        <input type="search" placeholder="Find a recipe" />
-        <button type="submit">
-          <img src="images/search.svg" alt="Search" />
+        <input
+          type="search"
+          placeholder="Find a recipe"
+          aria-label="Search for recipes"
+        />
+        <button type="submit" aria-label="Search">
+          <img src="images/search.svg" alt="Search Icon" />
         </button>
       </form>
     </header>
 
-    <main>
-      <section class="recipe">
-        <img src="images/apple-crisp.jpg" alt="Apple Crisp" />
-        <div class="content">
-          <span class="tag">dessert</span>
-          <h2>Apple Crisp</h2>
-          <p>
-            This apple crisp recipe is a simple yet delicious fall dessert
-            that's great served warm with vanilla ice cream.
-          </p>
-          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-            <span aria-hidden="true">⭐</span>
-            <span aria-hidden="true">⭐</span>
-            <span aria-hidden="true">⭐</span>
-            <span aria-hidden="true">⭐</span>
-            <span aria-hidden="true">☆</span>
-          </span>
-        </div>
-      </section>
-    </main>
+    <main></main>
 
     <footer>
       <div class="social">
